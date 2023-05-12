@@ -1,6 +1,6 @@
 import React from 'react';
 
-function userProfile() {
+function Review() {
     return (
         <div>
             
@@ -8,4 +8,4 @@ function userProfile() {
     );
 }
 
-export default userProfile;
+export default Review;
