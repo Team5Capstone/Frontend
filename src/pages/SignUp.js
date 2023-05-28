@@ -20,20 +20,55 @@ function SignUp() {
   };
 
   return (
-    <main>
-      <h1></h1>
-      <form>
+    <main className="signUp">
+      <h1 className="SignUpTitle">Create an account</h1>
+      <form className="" onSubmit={handleSubmit}>
+        <label htmlFor="firstName">First Name</label>
+        <input 
+        type="text"
+        name="firstName"
+        id="firstName"
+        required
+        value={firstName}
+        onChange={(e) => setFirstName(e.target.value)}
+        />
         <label></label>
-        <input />
+        <input 
+        type=""
+        name=""
+        id=""
+        required
+        value={}
+        onChange={}
+        />
         <label></label>
-        <input />
+        <input 
+        type=""
+        name=""
+        id=""
+        required
+        value={}
+        onChange={}
+        />
         <label></label>
-        <input />
+        <input 
+        type=""
+        name=""
+        id=""
+        required
+        value={}
+        onChange={}
+        />
         <label></label>
-        <input />
-        <label></label>
-        <input />
-        <button></button>
+        <input 
+        type=""
+        name=""
+        id=""
+        required
+        value={}
+        onChange={}
+        />
+        <button>Submit</button>
         <p></p>
       </form>
     </main>
