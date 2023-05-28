@@ -1,9 +1,15 @@
 import React, { useState } from "react";
 
 function SignUp() {
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+
   return (
     <main>
-      <h1>Create an account</h1>
+      <h1></h1>
       <form>
         <label></label>
         <input />
