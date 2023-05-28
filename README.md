@@ -2,7 +2,7 @@
 
 <!--  MVP features-->
 
-1. As a user when I go to the website I should see a landing page witha logo to the left of the page and a log in prompted to the right for me to log in.
+1. As a user when I go to the website I should see a landing page with a logo to the left of the page and a log in prompted to the right for me to log in.
 
 2. As a user if I don't have log in credentials I can click on a link in the log in prompt to a sign up. As a user I will be redirected to a form to have log in credentials.
 
@@ -14,7 +14,7 @@
 
 6. As a user I can share my experiences with others by creating forum post.
 
-7. As a user I can see see replies on my forum post by other users.
+7. As a user I can see replies on my forum post by other users.
 
 8. As a user I can support others by leaving commenting uplifting words on a forum posts of another user, and/or sharing resources by messaging the directly.
 
