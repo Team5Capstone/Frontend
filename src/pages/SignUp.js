@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 
 function SignUp() {
   return (
     <main>
-      <h1></h1>
+      <h1>Create an account</h1>
       <form>
         <label></label>
         <input />
