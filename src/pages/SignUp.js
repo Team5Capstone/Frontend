@@ -8,6 +8,17 @@ function SignUp() {
   const [password, setPassword] = useState("");
   const [dob, setDob] = useState("");
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log({ firstName, lastName, email, username, password, dob });
+    setFirstName("");
+    setLastName("");
+    setEmail("");
+    setUsername("");
+    setPassword("");
+    setDob("");
+  };
+
   return (
     <main>
       <h1></h1>
