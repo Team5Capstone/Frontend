@@ -41,7 +41,7 @@ function SignUp() {
         value={lastName}
         onChange={(e) => setLastName(e.target.value)}
         />
-        <label></label>
+        <label htmlFor=""></label>
         <input 
         type=""
         name=""
