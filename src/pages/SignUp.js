@@ -32,14 +32,14 @@ function SignUp() {
         value={firstName}
         onChange={(e) => setFirstName(e.target.value)}
         />
-        <label></label>
+        <label htmlFor="lastName">Last Name</label>
         <input 
-        type=""
-        name=""
-        id=""
+        type="text"
+        name="lastName"
+        id="lastName"
         required
-        value={}
-        onChange={}
+        value={lastName}
+        onChange={(e) => setLastName(e.target.value)}
         />
         <label></label>
         <input 
