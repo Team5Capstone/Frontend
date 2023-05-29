@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 function SignUp() {
+  useEffect(() => {}, []);
+
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
@@ -81,7 +83,7 @@ function SignUp() {
         <button className="submitButton">Submit</button>
         <p>
           Have an account?
-          <Link to="/">Log In</Link>
+          <Link to="/">Login here</Link>
         </p>
       </form>
     </main>
