@@ -41,7 +41,7 @@ function SignUp() {
         value={lastName}
         onChange={(e) => setLastName(e.target.value)}
         />
-        <label htmlFor="email"></label>
+        <label htmlFor="email">Email</label>
         <input 
        type="text"
        name="email"
@@ -50,7 +50,7 @@ function SignUp() {
        value={Text}
        onChange={(e) => setEmail(e.target.value)}
         />
-        <label></label>
+        <label ></label>
         <input 
         type=""
         name=""
