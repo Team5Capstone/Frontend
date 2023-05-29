@@ -41,11 +41,11 @@ function SignUp() {
         value={lastName}
         onChange={(e) => setLastName(e.target.value)}
         />
-        <label htmlFor=""></label>
+        <label htmlFor="email"></label>
         <input 
        type="text"
-       name="text"
-       id="text"
+       name="email"
+       id="email"
        required
        value={Text}
        onChange={(e) => setEmail(e.target.value)}
