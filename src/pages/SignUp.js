@@ -43,12 +43,12 @@ function SignUp() {
         />
         <label htmlFor=""></label>
         <input 
-        type=""
-        name=""
-        id=""
-        required
-        value={}
-        onChange={}
+       type="text"
+       name="text"
+       id="text"
+       required
+       value={Text}
+       onChange={(e) => setEmail(e.target.value)}
         />
         <label></label>
         <input 
