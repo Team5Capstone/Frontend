@@ -1,48 +1,58 @@
-import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import axios from "axios";
 
-function SignUp() {
-  useEffect(() => {}, []);
+const API = process.env.REACT_APP_API_URL;
 
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
-  const [email, setEmail] = useState("");
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-  const [dob, setDob] = useState("");
+function SignUp({ setSignedIn }) {
+  const navigate = useNavigate();
+
+  const [user, setUser] = useState({
+    first_name: "",
+    last_name: "",
+    email: "",
+    username: "",
+    password: "",
+    dob: "",
+  });
+
+  const handleTextChange = (e) => {
+    setUser({ ...user, [e.target.id]: e.target.value });
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log({ firstName, lastName, email, username, password, dob });
-    setFirstName("");
-    setLastName("");
-    setEmail("");
-    setUsername("");
-    setPassword("");
-    setDob("");
+    axios
+      .post(`${API}/users`, user)
+      .then((user) => {
+        window.localStorage.setItem("myUser", JSON.stringify(user));
+        setSignedIn(true);
+        navigate("/profile");
+      })
+      .catch((error) => console.error(error));
   };
 
   return (
     <main className="signUp">
       <h1 className="SignUpTitle">Create an account</h1>
       <form className="" onSubmit={handleSubmit}>
-        <label htmlFor="firstName">First Name</label>
+        <label htmlFor="first_name">First Name</label>
         <input
           type="text"
-          name="firstName"
-          id="firstName"
+          name="first_name"
+          id="first_name"
           required
-          value={firstName}
-          onChange={(e) => setFirstName(e.target.value)}
+          value={user.first_name}
+          onChange={handleTextChange}
         />
-        <label htmlFor="lastName">Last Name</label>
+        <label htmlFor="last_name">Last Name</label>
         <input
           type="text"
-          name="lastName"
-          id="lastName"
+          name="last_name"
+          id="last_name"
           required
-          value={lastName}
-          onChange={(e) => setLastName(e.target.value)}
+          value={user.last_name}
+          onChange={handleTextChange}
         />
         <label htmlFor="email">Email</label>
         <input
@@ -50,8 +60,8 @@ function SignUp() {
           name="email"
           id="email"
           required
-          value={Text}
-          onChange={(e) => setEmail(e.target.value)}
+          value={user.email}
+          onChange={handleTextChange}
         />
         <label htmlFor="username">Username</label>
         <input
@@ -59,8 +69,8 @@ function SignUp() {
           name="username"
           id="username"
           required
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
+          value={user.username}
+          onChange={handleTextChange}
         />
         <label htmlFor="password">Password</label>
         <input
@@ -68,8 +78,8 @@ function SignUp() {
           name="password"
           id="password"
           required
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
+          value={user.password}
+          onChange={handleTextChange}
         />
         <label htmlFor="dob">DOB</label>
         <input
@@ -77,8 +87,8 @@ function SignUp() {
           name="dob"
           id="dob"
           required
-          value={dob}
-          onChange={(e) => setPassword(e.target.value)}
+          value={user.dob}
+          onChange={handleTextChange}
         />
         <button className="submitButton">Submit</button>
         <p>
