@@ -81,7 +81,7 @@ function SignUp({ setSignedIn }) {
           value={user.password}
           onChange={handleTextChange}
         />
-        <label htmlFor="dob">DOB</label>
+        <label htmlFor="dob">D.O.B</label>
         <input
           type="text"
           name="dob"
