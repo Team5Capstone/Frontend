@@ -34,6 +34,7 @@ function App() {
           <Route path="/inbox" element={<DirectMessages />} />
           <Route path="/maps" element={<Map />} />
           <Route path="/journal" element={<Journal />} />
+          <Route path="*" element={<FourOFour />} />
         </Routes>
       </Router>
     </div>
