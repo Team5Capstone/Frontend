@@ -1,5 +1,13 @@
+import fourOFourError from "../pages/Four0Four";
+
 export default helperFuncs = () => {
-  const fourOFourError = () => {};
+  const fourOFourError = () => {
+    return (
+      <div>
+        <fourOFourError />
+      </div>
+    );
+  };
 
   const loginError = (email, password) => {
     if (email && password) {
