@@ -1,15 +1,6 @@
 import fourOFourError from "../pages/Four0Four";
 
 export default helperFuncs = () => {
-  const fourOFourError = () => {
-    //if app.js file is waiting for the route provided to be anything other than our routes we have in our app how is this function serving it up rather than a page serving up the component
-    return (
-      <div>
-        <fourOFourError />
-      </div>
-    );
-  };
-
   const loginError = (email, password) => {
     if (email && password) {
       return (
