@@ -2,6 +2,7 @@ import fourOFourError from "../pages/Four0Four";
 
 export default helperFuncs = () => {
   const fourOFourError = () => {
+    //if route provided is one of the routes
     return (
       <div>
         <fourOFourError />
