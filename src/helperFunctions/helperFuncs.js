@@ -11,8 +11,14 @@ export default helperFuncs = () => {
 
   const loginError = (email, password) => {
     if (email && password) {
-      //Make font red make second sentence bold
-      return "The email and/or password provided is not connected to an account. Please make an account or try again";
+      return (
+        <div>
+          <p style={{ color: "red", fontSize: 12 }}>
+            The email and/or password provided is not connected to an account
+            <strong>Please make an account or try again.</strong>
+          </p>
+        </div>
+      );
     }
   };
 };
