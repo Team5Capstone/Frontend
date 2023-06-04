@@ -18,7 +18,8 @@
 5. As a user I can protect my identity by remaining anonymous through avatars and a username that differs from my real name when participating in forum discussions to share my thoughts, concerns, and experiences freely.
 
 6. As a user I can see all forum post by clicking on the Everything link nested under forums in the Navbar.
-   <!-- As a user I should have the option to filter forums by: category, tags, latest, and most popular. -->
+   As a user I should have the option to filter forums by: category, latest, and most popular.
+   <!-- tags TBD-->
 
 7. As a user I can support other users by leaving comments on their forum posts.
 
@@ -40,7 +41,7 @@
 
 15. As a user I can click on a user's avatar a forum
 to view their profiles. Once on their profile page I could click on a message button under their avatar image to talk to them directly.
-<!-- messages to? -->
+<!-- messages having that functionality TBD? -->
 
 16. As a user I have the option to create journal entries by clicking Your Journal link nested under journal in navbar.
 
