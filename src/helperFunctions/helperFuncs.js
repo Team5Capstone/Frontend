@@ -1,5 +1,5 @@
 export default helperFuncs = () => {
-  const FourOFourError = () => {};
+  const fourOFourError = () => {};
 
   const loginError = () => {};
 };
