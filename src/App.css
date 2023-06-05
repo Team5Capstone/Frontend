@@ -1,4 +1,4 @@
-/* CSS Reset */
+ /* CSS Reset */
 html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, ol, ul, li, table, tr, th, td {
     margin: 0;
     padding: 0;
@@ -27,8 +27,8 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, ol, ul, li, table, tr,
   
     /* MEMO: Will need to change */
   }
-  
-  /* Max-width for Standard Screens */
+/*   
+  Max-width for Standard Screens */
   @media (min-width: 768px) {
     .container {
       max-width: 1200px;
@@ -41,4 +41,4 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, ol, ul, li, table, tr,
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Aristotelica Pro', sans-serif;
     color: black;
-  }
+  } 

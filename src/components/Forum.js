@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import "../style/AllPost.css" 
 
 const API = process.env.REACT_APP_API_URL;
 
@@ -29,11 +30,6 @@ function Forums() {
   
   const changeSortBy = (e) => {
     setSortBy(e.target.value);
-  };
-  
-  const createNewForum = () => {
-    // Implement the logic to create a new forum
-    console.log('Create new forum');
   };
   
   useEffect(() => {
@@ -75,7 +71,6 @@ function Forums() {
             <h2>{forum.forum_title}</h2>
             <p>{forum.forum_description}</p>
             <p>Created At: {forum.forum_created_at}</p>
-            <p>Updated At: {forum.forum_updated_at}</p>
             <p>{forum.forum_posts}</p>
           </li>
         ))}
@@ -85,3 +80,10 @@ function Forums() {
 }
 
 export default Forums;
+
+// Add a reply button in each forum 
+// should me Create new forum a button
+// Change category names in dropdown
+// add boarder around each form 
+// make header and footer
+

@@ -1,4 +1,4 @@
-.avatarModel {
+.avatarModal {
     position: fixed;
     top: 0;
     left: 0;
@@ -19,11 +19,11 @@
     gap: 10px;
   }
   
-  .avatarModel h2 {
+  .avatarModal h2 {
     color: white;
   }
   
-  .avatarModel img {
+  img {
     width: 100px;
     height: 100px;
   }
