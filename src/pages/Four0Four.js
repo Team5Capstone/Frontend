@@ -3,7 +3,7 @@ import React from "react";
 function Four0Four() {
   return (
     <div>
-      <fourOFourError />
+      <h1> Sorry, page not found. Your not alone.</h1>
     </div>
   );
 }
